@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #fff;
+    --color-light: #f3f4f8;
+    --color-dark: #686e7a;
+    --color-black: #111727;
+    --color-primary: #633fbd;
+    --color-body-bg: #d2d0dd;
+
+    --transition: all 300ms ease;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-body-bg);
+    color: var(--color-dark);
+    font-size: 0.9rem;
+    display: grid;
+    place-items: center;
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+h1{
+    color: var(--color-dark);
+    margin-bottom: 0.3rem;
+    font-size: 2rem;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn.primary {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn:hover{
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.btn img {
+    width: 1.2rem;
+}
+
+.sign-in{
+    display: grid;
+    background: var(--color-white);
+    width: 60rem;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 1rem;
+    align-items: center;
+    overflow: hidden;
+    margin: 10em auto;
+}
+
+.sign-in__details{
+    padding: 2rem 4rem;
+}
+
+.sign-in__form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.form__control{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input:not((type="checkbox")){
+    width: 100%;
+    border: 1px solid var(--color-body-bg);
+    border-radius: 0.5rem;
+}
+
+input::placeholder{
+    color: var(--color-body-bg);
+}
+
+label{
+    font-weight: 500;
+    color: var(--color-black);
+}
+
+a, a:active, a:visited {
+    color: var();
+}
+
+.sign-in__extras{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-in__extras div{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.next-page {
+    margin-top: 1rem;
+    text-align: center;
+    display: block;
+}
+
+.sign-in__logo{
+    display: grid;
+    place-content: center;
+    background: url("./assets/bg_texture.png"), var(--color-primary);
+    height: 100%;
+}
+
+.sign-in__logo div {
+    width: 22rem;
+    aspect-ratio: 1/1;
+}
+
