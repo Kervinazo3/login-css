@@ -126,6 +126,10 @@ a, a:active, a:visited {
     align-items: center;
 }
 
+button:last-child{
+    margin-top: -0.5rem;
+}
+
 .next-page {
     margin-top: 1rem;
     text-align: center;
@@ -144,3 +148,41 @@ a, a:active, a:visited {
     aspect-ratio: 1/1;
 }
 
+/* MEDIA QUERIS*/
+
+@media screen and (max-width: 600px){
+    body{
+        display: block;
+        background: var(--color-white);
+    }
+
+    .sign-in {
+        grid-template-columns: 1fr;
+        width: 100vw;
+        overflow: visible;
+    }
+
+    .sign-in__details{
+        grid-row: 2/3;
+        padding: 2rem 1.5rem;
+    }
+
+    .sign-in__form{
+        margin-top: 1.5rem;
+        gap: 1rem;
+    }
+
+    .sign-in__extras{
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .sign-in__logo{
+        padding: 1.5rem 0;
+    }
+
+    .sign-in__logo div{
+        width: 12rem;
+    }
+}
